@@ -1,0 +1,86 @@
+html{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 40px;
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(to right bottom,rgba(128, 0, 255, 0.8),rgba(248, 244, 244, 0.07)),
+  url(./asset/image/bg_body.jpeg);
+}
+
+#input{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15pt;
+}
+
+.buttonLabel{
+  float: right;
+}
+
+.container{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+ul{
+  cursor: pointer;
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul#list li{
+  padding-top: 10px;
+  text-align: left;
+}
+
+.textspan{
+  border: rgb(255, 0, 0) solid 2px;
+}
+
+ul#list li:hover .buttonLabel:after{
+  display: contents;
+  content: '\0274C';
+  font-size: 12pt;
+}
+
+.container2{
+  background-color: whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 79vw;
+  border-radius: 20px;
+}
+
+.col1{
+  width: 60vw;
+  display: inline-block; /*questi div saranno posti uno a fianco all'altro*/
+  text-align: left;
+  padding: 5px;
+  color: #2d3e50;
+}
+.col2{
+  width: 5vw;
+  display: inline-block; /*questi div saranno posti uno a fianco all'altro*/
+  padding: 5px;
+  color: #2d3e50;
+
+}
+
+
+
+
+
