@@ -1,0 +1,10 @@
+{
+    "cSpell.language": "en,lorem",
+    "cSpell.enableFiletypes": [
+        "spring-boot-properties",
+        "spring-boot-properties-yaml",
+        "sql",
+        "ssh_config",
+        "xml"
+    ]
+}
