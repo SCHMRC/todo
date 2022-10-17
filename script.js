@@ -2,7 +2,9 @@ function main() {
   let dom = document;
   let input = dom.querySelector('#input');
   let list = getList()
-
+  let storage = localStorage.getItem('items')
+  console.dir(storage)
+  storage? items = JSON.parse(storage) : items = []
   render(items)
 
   function render(items) {
@@ -30,6 +32,7 @@ function main() {
       spanButton.addEventListener('click', (e) => {
         let obj = factory(li)
         items.splice(indexOf(items, obj), 1)
+        localStorage.setItem('items',JSON.stringify(items))
         removeListRendering()
         render(items)
       })
@@ -74,11 +77,12 @@ function main() {
 
   input.addEventListener('keyup', (event) => {
     if (event.keyCode == 13 && input.value != '' && (input.value.length > 1 && input.value !== ' ')) {
-      items.push({
+      items.unshift({
         id: `00${items.length + 1}`,
         title: input.value,
         content: input.value
       })
+      localStorage.setItem('items',JSON.stringify(items))
       input.value = ''
       list = getList()
       removeListRendering()
